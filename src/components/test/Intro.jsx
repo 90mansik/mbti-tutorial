@@ -1,4 +1,4 @@
-import IntroButtonGroup from "./IntroButtonGroup";
+import IntroButtonGroup from "./introButtonGroup";
 
 function Intro({info, setMode}) {
         // const onImageClick = () =>{
