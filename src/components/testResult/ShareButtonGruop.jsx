@@ -2,7 +2,6 @@ import React from 'react'
 import { FacebookIcon, FacebookShareButton, TwitterShareButton, XIcon } from 'react-share';
 import { base_url} from "../../App";
 import styles from './shareButtonGrouop.module.css';
-import CopyToClipboard from 'react-copy-to-clipboard';
 
 const ShareButtonGruop = ({testParam, resultParam, renderTestInfo}) => {
     console.log("rendertestinfo",renderTestInfo);
