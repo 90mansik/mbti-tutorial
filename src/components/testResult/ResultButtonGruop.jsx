@@ -1,5 +1,4 @@
 import React from 'react'
-import CopyToClipboard from 'react-copy-to-clipboard';
 import { LinkOutlined, RedoOutlined, HomeOutlined} from '@ant-design/icons';
 import { base_url } from '../../App';
 import { useNavigate } from 'react-router-dom';
@@ -15,12 +14,17 @@ const ResultButtonGruop = ({testParam, resultParam}) => {
   const OnClickGoHomeButton = () =>{
     navigate("/");
   }
+
+  const OnClickCopyToClipboard = () => {
+    // navigator.clipboard.writeText(window.location.href)
+    navigator.clipboard.writeText(`${base_url}/${testParam}/result/${resultParam}`)
+    .then(() => alert("URL 복사 완료!"))
+    .catch(() => alert("복사 실패 😢"));
+  }
   return (
     <div className={styles.mainDiv}>
         <div className={styles.upperDiv}>
-            <CopyToClipboard text={`${base_url}/${testParam}/result/${resultParam}`}>
-                <button   className={styles.upperButton} onClick={() => alert("URL이 복사되었습니다.")}><LinkOutlined />&nbsp; 링크 복사</button>
-            </CopyToClipboard>
+            <button   className={styles.upperButton} onClick={OnClickCopyToClipboard} ><LinkOutlined />&nbsp; 링크 복사</button>
             <button 
                 className={styles.upperButton}
                 onClick={oncLickRedoButton}><RedoOutlined />&nbsp; 다시 하기</button>
