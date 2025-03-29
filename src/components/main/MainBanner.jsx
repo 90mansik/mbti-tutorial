@@ -1,6 +1,9 @@
+import mainImage from '../../data/img/mainImg_tiger.png';
+ 
  function MainBanner(){
-     return <div style={{ border: "1px solid black", padding: "2rem"}}>
-        <h1>MBTI TEST Platform</h1>
+     return <div >
+        {/* <h1>MBTI TEST Platform</h1>*/}
+         <img src={mainImage} alt="Main Banner" style={{ maxWidth: "100%", height: "auto" }} />
      </div>;
  }
 

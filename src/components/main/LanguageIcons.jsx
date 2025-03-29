@@ -10,7 +10,7 @@ function LanguageIcons(){
     }
 
     
-    return <div>
+    return <div >
         {/* -> mbti.com?lang=Kor  */}
         <CircleFlag className={styles.flagIcon} onClick={() => onButtonClick("Kor")}countryCode="kr" width={48} />
         {/* -> mbti.com?lang=Eng  */}
