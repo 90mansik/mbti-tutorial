@@ -2,12 +2,27 @@ import{BrowserRouter, Route, Routes} from 'react-router-dom';
 import Main from "./page/Main";
 import Test from "./page/Test";
 import TestResult from "./page/TestResult";
+import { useEffect } from 'react';
+import ReactG4 from 'react-ga4'
 
 
 // export const base_url = "http://localhost:5173";
 export const base_url = import.meta.env.VITE_BASE_URL;
 
 function App() {
+  useEffect( () => {
+    ReactG4.initialize(
+      [
+        {
+          trackingId : "GTM-TW4PFXB6",
+          gaOptions:{
+            siteSpeedSampleRate : 100
+          }
+          
+        }
+      ]
+    )
+  })
   return (
     <BrowserRouter>
       <Routes>
