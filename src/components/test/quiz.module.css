@@ -13,3 +13,8 @@
     border: 2px solid brown;
     background-color: white;
 }
+
+.optionButton:hover{
+    background-color: brown; 
+    color: white;
+}
