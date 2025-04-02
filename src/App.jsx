@@ -1,6 +1,7 @@
 import{BrowserRouter, Route, Routes} from 'react-router-dom';
 import Main from "./page/Main";
 import Test from "./page/Test";
+import Privacy from './page/Privacy';
 import TestResult from "./page/TestResult";
 import { useEffect } from 'react';
 import ReactG4 from 'react-ga4'
@@ -32,6 +33,8 @@ function App() {
         <Route path="/:testParam" element={<Test />} />
         {/* Test Result Page */}
         <Route path="/:testParam/result/:resultParam" element={<TestResult />} />
+        {/* Pricacy Page */}
+        <Route path='/privacy' element={<Privacy />} />
       </Routes>
     </BrowserRouter>
   )
