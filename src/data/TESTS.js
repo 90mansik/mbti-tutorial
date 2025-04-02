@@ -198,13 +198,13 @@ export const TESTS = [
         type: "ESTP",
         query: "ESTP",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich/rich-estp.png?_t=1743373466",
+          "https://mansik.dothome.co.kr/img/rich/07.ESTP.jpg?_t=1743604231",
       },
       {
         type: "ESFJ",
         query: "ESFJ",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich-estj.png?_t=1743347888",
+          "https://mansik.dothome.co.kr/img/rich/10.ESFJ.jpg?_t=1743604231",
       },
       {
         type: "ESFP",
@@ -222,7 +222,7 @@ export const TESTS = [
         type: "ENTP",
         query: "ENTP",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich-estj.png?_t=1743347888",
+          "https://mansik.dothome.co.kr/img/rich/15.ENTP.jpg?_t=1743604231",
       },
       {
         type: "ENFJ",
@@ -234,7 +234,7 @@ export const TESTS = [
         type: "ENFP",
         query: "ENFP",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich-estj.png?_t=1743347888",
+          "https://mansik.dothome.co.kr/img/rich/09.ENFP.jpg?_t=1743604231",
       },
       {
         type: "ISTJ",
@@ -246,13 +246,13 @@ export const TESTS = [
         type: "ISTP",
         query: "ISTP",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich-estj.png?_t=1743347888",
+          "https://mansik.dothome.co.kr/img/rich/08.ISTP.jpg?_t=1743604231",
       },
       {
         type: "ISFJ",
         query: "ISFJ",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich-estj.png?_t=1743347888",
+          "https://mansik.dothome.co.kr/img/rich/11.ISFJ.jpg?_t=1743604231",
       },
       {
         type: "ISFP",
@@ -270,7 +270,7 @@ export const TESTS = [
         type: "INTP",
         query: "INTP",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich-estj.png?_t=1743347888",
+          "https://mansik.dothome.co.kr/img/rich/16.INTP.jpg?_t=1743604231",
       },
       {
         type: "INFJ",
@@ -282,7 +282,7 @@ export const TESTS = [
         type: "INFP",
         query: "INFP",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich-estj.png?_t=1743347888",
+          "https://mansik.dothome.co.kr/img/rich/12.INFP.jpg?_t=1743604231",
       },
     ],
   },
