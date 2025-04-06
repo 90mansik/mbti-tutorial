@@ -39,7 +39,7 @@ function TestResult(){
     }, [testParam, resultParam, navigate]);
     return <div>
         <TestResultRender renderResultInfo={renderResultInfo} />
-        <ShareButtonGruop testParam={testParam} resultParam={resultParam} renderTestInfo={renderTestInfo} />
+        {/* <ShareButtonGruop testParam={testParam} resultParam={resultParam} renderTestInfo={renderTestInfo} /> */}
         <ResultButtonGruop testParam={testParam} resultParam={resultParam}  />
         <ResultThumbnailList testParam={testParam} />
     </div>;
