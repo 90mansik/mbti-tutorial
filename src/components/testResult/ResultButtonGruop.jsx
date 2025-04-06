@@ -32,6 +32,7 @@ const ResultButtonGruop = ({testParam, resultParam}) => {
             <button   className={styles.upperButton} onClick={OnClickCopyToClipboard} ><LinkOutlined />&nbsp; 링크 복사</button>
             <button className={styles.bottomButton}
                 onClick={OnClickGoHomeButton}><HomeOutlined />&nbsp; 다른 테스트 하러 가기</button>
+                
         </div>
     </div>
 
