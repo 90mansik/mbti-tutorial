@@ -298,10 +298,10 @@ export const TESTS = [
       scoreType: "oneChoice",
       scoreArray: ["LG", "SSG", "SAM", "KT", "LOT", "NC", "DU", "KI", "KIA", "HAN"], // 점수 타입 배열
       mainImage:
-        "https://mansik.dothome.co.kr/img/test/test-main.png?_t=1743921397",
+        "https://mansik.dothome.co.kr/img/baseballTest/baseball_main.jpg?_t=1743950459",
         
       thumbImage:
-        "https://mansik.dothome.co.kr/img/test/test-main.png?_t=1743921397",
+        "https://mansik.dothome.co.kr/img/baseballTest/baseball_main.jpg?_t=1743950459",
       lang: "Kor",
       category: "etc",
     },
