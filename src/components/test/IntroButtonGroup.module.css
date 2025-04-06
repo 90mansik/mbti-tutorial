@@ -1,17 +1,21 @@
-.upperButton, .bottomButton{
-    width: 40%;
-    height:3.5rem;
-    margin: 0 5%;
+.upperButton, .bottomButton {
+    width: 45%;
+    height: 3.5rem;
+    margin: 0 2.5%;
     cursor: pointer;
-    font-size : 1.3rpm;
-    font-weight: 0.5rpm;
-    border: solid 2px brown;
-    background-color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 2px solid #a0522d; /* 짙은 브라운 */
+    background-color: #fffdf8;
+    color: #a0522d;
+    border-radius: 0.8rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.2s ease-in-out;
 }
 
 .upperButton:hover,
-.bottomButton:hover{
-    background-color: brown; 
+.bottomButton:hover {
+    background-color: #a0522d;
     color: white;
+    transform: scale(1.03);
 }
-

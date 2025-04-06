@@ -1,0 +1,41 @@
+.footerWrapper {
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    color: #333;
+    border-top: 1px solid #ffffff;
+  }
+  
+  .contactBox h4 {
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    color: #111;
+  }
+  
+  .contactBox a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .infoBox {
+    margin-top: 1rem;
+    line-height: 1.4;
+  }
+  
+  .disclaimer {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  .privacyLink {
+    display: inline-block;
+    margin-top: 0.7rem;
+    color: #888;
+    text-decoration: underline;
+    font-size: 0.85rem;
+  }

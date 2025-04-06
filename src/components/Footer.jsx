@@ -1,30 +1,25 @@
 import React from "react";
+import styles from './Footer.module.css';
 
-const Footer = () =>{
-    return <div>
-        <h5>
-            광고 및 후원 문의
-            <br />
-            Advertising and Sponsorshop Contact
-        </h5>
-        <p>90mansik@gmail.com</p>
-        <p>
-            MBTI-PLATFORM SHOP
-            {/* <br /> */}
-             {/* 주소 : --------------- */}
-            <br />
-             호스팅 서비스 : CloudFlare
-        </p>
-        <p>
-            Disclaimer:<br></br>All content is provided for fun ad entertainment purpose only
-        </p>
-        <p>
-            MBTI_Platform shop All rights reserved. 2025
-        </p>
-        <div>
-             <a href="/privacy">개인정보 처리방침</a>
+const Footer = () => {
+    return (
+      <footer className={styles.footerWrapper}>
+        <div className={styles.contactBox}>
+          <h3>📬 광고 및 후원 문의</h3>
+          <p>Advertising and Sponsorship Contact</p>
+          <a href="mailto:90mansik@gmail.com">90mansik@gmail.com</a>
         </div>
-    </div>;
-};
+  
+        <div className={styles.infoBox}>
+          <p>© 2025 MBTI-PLATFORM SHOP</p>
+          <p>호스팅 서비스: Cloudflare</p>
+          <p className={styles.disclaimer}>
+            Disclaimer: All content is provided for fun and entertainment purposes only.
+          </p>
+          <a className={styles.privacyLink} href="/privacy">개인정보 처리방침</a>
+        </div>
+      </footer>
+    );
+  };
 
 export default Footer;

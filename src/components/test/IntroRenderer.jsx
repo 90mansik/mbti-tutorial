@@ -6,17 +6,19 @@ import Loading  from "./Loading";
 function IntroRenderer({ currentTest}){
     // 점수판
     // Redux // Zustand
-    const [mbtiScore, setMbtiScore] = useState({
-        E : 0,
-        I : 0,
-        N : 0,
-        S : 0,
-        T : 0,
-        F : 0,
-        J : 0,
-        P : 0
-    });
-    const [mode, setMode] = useState("intro");  // intro, quiz, loading
+    // 점수판 초기화 함수
+    const initializeScore = (scoreType) => {
+        const score = {};
+        scoreType.forEach((type) => {
+            score[type] = 0; // 각 타입의 초기 점수는 0
+        });
+        return score;
+    };
+    const [mbtiScore, setMbtiScore] = useState(
+        initializeScore(currentTest?.info?.scoreArray || [])
+    );
+
+const [mode, setMode] = useState("intro");  // intro, quiz, loading
     if(mode == 'intro'){
         return <Intro info={currentTest?.info} setMode={setMode} />;
     }else if(mode == 'quiz'){

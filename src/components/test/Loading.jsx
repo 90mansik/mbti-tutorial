@@ -7,6 +7,45 @@ function Loading({mbtiScore, currentTest}) {
 
   const navigate = useNavigate();
   const [finalQuery, setFinalQuery] = useState("");
+
+  const calculateResult = () => {
+    const scoreType = currentTest?.info?.scoreType;
+    const scoreArray = currentTest?.info?.scoreArray || [];
+
+    console.log("scoreType", scoreType);
+    // console.log("scoreArray", scoreArray);
+
+    if (scoreType === "MBTI") {
+      // MBTI 결과 계산 로직
+      const mbtiPairs = [
+        ["E", "I"],
+        ["N", "S"],
+        ["T", "F"],
+        ["J", "P"],
+      ];
+
+      let resultType = "";
+      for (let pair of mbtiPairs) {
+        const firstType = pair[0]; // E, N, T, J
+        const secondType = pair[1]; // I, S, F, P
+
+        const firstTypeScore = mbtiScore[firstType] || 0; // 기본값 0
+        const secondTypeScore = mbtiScore[secondType] || 0; // 기본값 0
+
+        resultType += firstTypeScore > secondTypeScore ? firstType : secondType;
+      }
+      return resultType;
+    } else if (scoreType === "oneChoice") {
+      console.log("oneChoice init");
+      // oneChoice 결과 계산 로직
+      return scoreArray.reduce((highest, type) =>
+        mbtiScore[type] > mbtiScore[highest] ? type : highest
+      );
+    } else {
+      console.error("Unknown scoreType:", scoreType);
+      return null;
+    }
+  };
   
   const defaultOption = {
     loop: true,
@@ -15,38 +54,14 @@ function Loading({mbtiScore, currentTest}) {
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     }
-  }
+  };
 
-  useEffect( () => {
-    // 4개의 슬롯 Array [[E, I], [N, S], [T,F], [J, P]]
-    const mbtiPairs = [
-      ["E", "I"]
-      ,["N", "S"]
-      ,["T", "F"]
-      ,["J", "P"]
-    ];
-    // 비어있는 문자열 변수
-    let resultType = "";
-    // Array 순회 -> 각 슬롯의 winner 선정 -> 문자열 변수에 추가
-    for(let pair of mbtiPairs){
-      let firstType = pair[0];    // E, N, T, J
-      let secondType = pair[1];   // I, S, F, P
-
-      let firstTypeScore = mbtiScore[firstType]; // 2
-      let secondTypeScore = mbtiScore[secondType]; // 1
-
-      if(firstTypeScore > secondTypeScore){
-        resultType += firstType;
-      }else{
-        resultType += secondType;
-      }
-    }
+  useEffect(() => {
+    const resultType = calculateResult(); // calculateResult 함수 호출
     console.log("Generated resultType:", resultType);
     console.log("currentTest.result:", currentTest?.results);
 
-    const resultQuery = currentTest?.results?.find((result)=>(
-      result?.type == resultType
-    ))?.query;
+    const resultQuery = currentTest?.results?.find((result) => result?.type === resultType)?.query;
 
     console.log("Matching resultQuery:", resultQuery);
 

@@ -1,17 +1,23 @@
-.categoryButton{
-    width : 5rem;
-    height: 2rem;
-    margin : 1rem;
-    border: 1px solid brown;
-    border-radius: 1rem;
+.categoryButton {
+    width: 6rem;
+    height: 2.5rem;
+    margin: 0.5rem;
+    padding: 0.3rem 1rem;
+    border: 2px solid #a0522d; /* soft brown */
+    border-radius: 1.5rem;
     background-color: white;
-    color: brown;
-    font-size: 1.2rem;
-    font-weight: bold;
+    color: #a0522d;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.2s ease;
 }
 
-.categoryButton:hover{
-    background-color: brown;
+.categoryButton:hover {
+    background-color: #a0522d;
     color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }

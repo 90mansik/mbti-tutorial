@@ -1,4 +1,4 @@
-import mainImage from '../../data/img/mainImg_tiger.png';
+import mainImage from '../../data/img/mainImg_panda.png';
  
  function MainBanner(){
      return <div >

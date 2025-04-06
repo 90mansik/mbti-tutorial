@@ -37,9 +37,9 @@ function Quiz({
             percent={questionNum / questions.length * 100 } 
             showInfo={false}
         />
-        <h5>
-            {questionNum} / {questions.length} 
-        </h5>
+        <p className={styles.progressText}>
+          {questionNum} / {questions.length} 
+        </p>
     </div>;
 }
 

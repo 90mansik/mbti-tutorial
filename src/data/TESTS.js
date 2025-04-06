@@ -1,22 +1,24 @@
 export const TESTS = [
-  // personalColor
-  {
+  // 부자 순위 테스트
+    {
     info: {
       mainTitle: "부자 순위 테스트",
       subTitle: "나는 부자순위 몇위 일까",
-      mainUrl: "personalColor",
+      mainUrl: "richTest",
       scoreType: "MBTI",
+      scoreArray: ["E", "I", "S", "N", "T", "F", "J", "P"], // 점수 타입 배열
       mainImage:
-        "https://mansik.dothome.co.kr/img/rich/mbti01-rich.png?_t=1743345063",
+        "https://mansik.dothome.co.kr/img/rich/mbti01-rich.png?_t=1743918363",
+        
       thumbImage:
-        "https://mansik.dothome.co.kr/img/rich/mbti01-rich.png?_t=1743345063",
+        "https://mansik.dothome.co.kr/img/rich/mbti01-rich.png?_t=1743918363",
       lang: "Kor",
       category: "characteristic",
     },
     questions: [
       {
         which: "EI",
-        question: "돈 버는 기회가 생겼는데… 사람을 엄청 만나야 한다?!",
+        question: "돈 버는 기회가 생겼는데…사람을 엄청 만나야 한다?!",
         answers: [
           {
             type: "E",
@@ -94,7 +96,7 @@ export const TESTS = [
           },
           {
             type: "N",
-            content: "가나만 할 수 있는 메타버스 감정 기반 서비스 어때?",
+            content: "메타버스 감정 기반 서비스 어때?",
           },
         ],
       },
@@ -143,7 +145,7 @@ export const TESTS = [
       },
       {
         which: "JP",
-        question: "감자기 생긴 황금 같은 주말.. 당신은?",
+        question: "갑자기 생긴 황금 같은 주말.. 당신은?",
         answers: [
           {
             type: "J",
@@ -285,581 +287,310 @@ export const TESTS = [
           "https://mansik.dothome.co.kr/img/rich/12.INFP.jpg?_t=1743604231",
       },
     ],
-  },
-  // personalColorEng
+  }
+  ,
+  // 야구 구단 테스트
   {
     info: {
-      mainTitle: "Personal Color Test",
-      subTitle: "What is the color that suits me?",
-      mainUrl: "personalColorEng",
-      scoreType: "MBTI",
+      mainTitle: "야구 구단 테스트",
+      subTitle: "나에게 맞는 야구 구단은 어디?",
+      mainUrl: "baseballTeamTest",
+      scoreType: "oneChoice",
+      scoreArray: ["LG", "SSG", "SAM", "KT", "LOT", "NC", "DU", "KI", "KIA", "HAN"], // 점수 타입 배열
       mainImage:
-        "https://www.dropbox.com/scl/fi/jmihoko6rjpk0d3rgewsr/personalColorEng-intro.png?rlkey=ifyyqa8m4w44vq1nk08fshhnj&st=n42rl4fc&dl=1",
+        "https://mansik.dothome.co.kr/img/test/test-main.png?_t=1743921397",
+        
       thumbImage:
-        "https://www.dropbox.com/scl/fi/x2b3tms9ml6kbz3vcot9h/personalColorEng-thumb.png?rlkey=alaxfwbswgfn34xao2zm99a84&st=zvw3w510&dl=1",
-      lang: "Eng",
+        "https://mansik.dothome.co.kr/img/test/test-main.png?_t=1743921397",
+      lang: "Kor",
       category: "characteristic",
     },
     questions: [
       {
         which: "EI",
-        question: "처음 보는 친구들에게 나는?",
+        question: "내가 선호하는 야구 응원 방식은?",
         answers: [
           {
-            type: "E",
-            content: "내가 먼저 말을 건낸다.",
+            type: "KIA",
+            content: "드럼치고 소리 지르며 열정적으로!",
           },
           {
-            type: "I",
-            content: "대부분 다른 친구가 먼저 말을 건낸다.",
+            type: "DU",
+            content: "깔끔한 박자와 감성, 응원에도 품격을!",
+          },
+          {
+            type: "KI",
+            content: "혼자 조용히 박수 치며 응원하는 스타일",
+          },
+          {
+            type: "KT",
+            content: "경기 흐름에 따라 반응하는 스마트형",
           },
         ],
       },
       {
         which: "EI",
-        question: "주말에 난?",
+        question: "팀이 연패 중일 때 내 반응은?",
         answers: [
           {
-            type: "E",
-            content: "사람들과 만나는 것을 즐긴다.",
+            type: "LOT",
+            content: "무덤덤하지만 속은 불타오름",
           },
           {
-            type: "I",
-            content: "혼자 있는 게 싫지 않은 편이다.",
+            type: "SAM",
+            content: "괜찮아, 다음에 이기겠지! 낙관주의자",
+          },
+          {
+            type: "NC",
+            content: "차분히 분석하며 다음에 이길 전략에 대해 논의",
+          },
+          {
+            type: "HAN",
+            content: "이번에도 울 준비 됐어.. 감정 과몰입",
           },
         ],
       },
       {
         which: "EI",
-        question: "친구들과 놀 때 나는?",
+        question: "경기장을 찾는 나의 스타일은?",
         answers: [
           {
-            type: "E",
-            content: "왁자지껄한 신나는 분위기를 좋아한다.",
+            type: "DU",
+            content: "도시락 풀세팅, 먹고 응원도 열심히",
           },
           {
-            type: "I",
-            content: "소수의 친구들과 소소하게 대화하는 것을 좋아한다. ",
+            type: "LG",
+            content: "자리는 정중앙, 선수 한명 한명 집중",
+          },
+          {
+            type: "KIA",
+            content: "응원단보다 더 큰 목소리 내는 열혈팬",
+          },
+          {
+            type: "HAN",
+            content: "작은 응원도 진심으로, 포기란 없다",
           },
         ],
       },
       {
         which: "SN",
-        question: "내가 더 중요하게 생각하는 것은?",
+        question: "내가 좋아하는 팀의 이미지는?",
         answers: [
           {
-            type: "S",
-            content: "현재가 없으면 미래도 없다.",
+            type: "SAM",
+            content: "안정적이고 믿음직한 명문팀",
           },
           {
-            type: "N",
-            content: "미래를 생각하지 않으면 발전이 없다.",
+            type: "LOT",
+            content: "드라마틱한 반전과 뜨거운 열기",
+          },
+          {
+            type: "LG",
+            content: "승부는 당연, 예술적인 경기력까지!",
+          },
+          {
+            type: "KI",
+            content: "무에서 유를 만드는 노력의 결정체",
           },
         ],
       },
       {
         which: "SN",
-        question: "일할 때 나는?",
+        question: "경기에서 중요한 순간, 내 스타일은?",
         answers: [
           {
-            type: "S",
-            content: "남들이 하는 대로 따라 가는 것이 좋다.",
+            type: "NC",
+            content: "입 꾹 다물고 조용히 손만 꽉 쥠",
           },
           {
-            type: "N",
-            content: "스스로 나만의 방법을 만드는 게 좋다. ",
+            type: "LG",
+            content: "갑자기 자리에서 벌떡 일어나 응원",
+          },
+          {
+            type: "HAN",
+            content: "주변 팬들과 손잡고, 이길 수 있다!!! 외치기",
+          },
+          {
+            type: "KT",
+            content: "소리 없이 집중, 심리전도 경기다!!",
           },
         ],
       },
       {
         which: "SN",
-        question: "주변 사람들이 나에게 하는 말은?",
+        question: "야구장에서 가장 행복한 순간은?",
         answers: [
           {
-            type: "S",
-            content: "꾸준하고 참을성이 있다는 말을 자주한다.",
+            type: "HAN",
+            content: "팀이 이기는 순간, 벅차서 눈물남",
           },
           {
-            type: "N",
-            content: "창의적이고 독창적이라는 말을 자주한다.",
+            type: "LOT",
+            content: "역전 홈런 때 관중 전체가 터질 때",
+          },
+          {
+            type: "NC",
+            content: "승리를 차분히 정리하는 마지막 아웃 카운트",
+          },
+          {
+            type: "DU",
+            content: "치킨 먹으며 감성에 젖는 7회말",
           },
         ],
       },
       {
         which: "TF",
-        question: "거절해야 하는 상황이 오면 나는?",
+        question: "야구팀의 SNS나 굿즈도 중요하게 생각해?",
         answers: [
           {
-            type: "T",
-            content: "강력하게 할 수 없다고 말한다.",
+            type: "KT",
+            content: "응, 응원도 콘텐츠 시대!",
           },
           {
-            type: "F",
-            content: "고민하다가 대부분 들어주는 편이다.",
+            type: "KIA",
+            content: "난 그런 거보다 경기가 전부야",
+          },
+          {
+            type: "LG",
+            content: "은근 팬덤 관리도 팀 이미지에 중요하지",
+          },
+          {
+            type: "SAM",
+            content: "굿즈? 나오면 바로 결제함",
           },
         ],
       },
       {
         which: "TF",
-        question: "화났을 때 나는?",
+        question: "내가 응원팀을 선택하는 기준은?",
         answers: [
           {
-            type: "T",
-            content: "논리적으로 잘 말하면서 따진다. ",
+            type: "LOT",
+            content: "내 고향 또는 연고지",
           },
           {
-            type: "F",
-            content: "할말이 많지만 너무 분해서 눈물부터 난다.",
+            type: "DU",
+            content: "팀의 역사와 전통",
+          },
+          {
+            type: "KI",
+            content: "스토리와 성장성",
+          },
+          {
+            type: "NC",
+            content: "분석과 기대치, 통계적 매력",
           },
         ],
       },
       {
         which: "TF",
         question:
-          "고민을 얘기하는 친구, 듣다 보니 친구의 잘못인 것 같다. 그럴 때 나는?",
+          "주변 팬과의 소통 스타일은?",
         answers: [
           {
-            type: "T",
-            content: "친구의 잘못된 점을 말해준다.",
+            type: "LOT",
+            content: "혼자 와도 옆사람이랑 금방 친구됨",
           },
           {
-            type: "F",
-            content: "직접적으로 말하면 친구가 그래 할까봐 돌려 말한다.",
+            type: "SAM",
+            content: "익숙한 멤버끼리 조용한 응원",
+          },
+          {
+            type: "KIA",
+            content: "적극적으로 춤과 노래 다 같이 함",
+          },
+          {
+            type: "KT",
+            content: "조용히 커뮤니티 글로 응원 후기 씀",
           },
         ],
       },
       {
         which: "JP",
-        question: "준비물을 준비할 때 나는?",
+        question: "팬으로서 가장 중요하게 생각하는건?",
         answers: [
           {
-            type: "J",
-            content: "하루 전 날 미리 준비한다.",
+            type: "HAN",
+            content: "팀과의 감정적 유대감",
           },
           {
-            type: "P",
-            content: "‘내일 챙겨야지’ 하다가 까먹고 놓고 오는 일이 많다.",
-          },
-        ],
-      },
-      {
-        which: "JP",
-        question:
-          "끝나고 집에 가서 공부하려 했는데, 친구들이 놀자고 붙잡는다. 나는?",
-        answers: [
-          {
-            type: "J",
-            content: "계획에 없던 일인데…매우 당황스럽다.",
+            type: "NC",
+            content: "경기력과 실속 있는 운영",
           },
           {
-            type: "P",
-            content: "오케이! 역시 계획대로 안 되는 것이 인생! 놀자!!!!",
-          },
-        ],
-      },
-      {
-        which: "JP",
-        question: "내가 가고싶은 여행지 스타일은?",
-        answers: [
-          {
-            type: "J",
-            content:
-              "내가 계획한대로! 계획적으로 일의 순서대로 진행하는 것을 좋아해!",
+            type: "DU",
+            content: "응원문화와 팬 서비스",
           },
           {
-            type: "P",
-            content:
-              "그때그때 생각나는 대로 일 처리! 융통성 있게 하는 것을 좋아해!",
+            type: "KI",
+            content: "성과와 실험적인 전술",
           },
         ],
       },
     ],
     results: [
       {
-        type: "ESTJ",
-        query: "ESTJ",
+        type: "LG",
+        query: "LG",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich/03.ESTJ.jpg?_t=1743604231",
+          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
       },
       {
-        type: "ESTP",
-        query: "ESTP",
+        type: "SSG",
+        query: "SSG",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich/07.ESTP.jpg?_t=1743604231",
+          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
       },
       {
-        type: "ESFJ",
-        query: "ESFJ",
+        type: "SAM",
+        query: "SAM",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich/10.ESFJ.jpg?_t=1743604231",
+          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
       },
       {
-        type: "ESFP",
-        query: "ESFP",
+        type: "KT",
+        query: "KT",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich/13.ESFP.jpg?_t=1743604231",
+          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
       },
       {
-        type: "ENTJ",
-        query: "ENTJ",
+        type: "LOT",
+        query: "LOT",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich/01.ENTJ.jpg?_t=1743604231",
+          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
       },
       {
-        type: "ENTP",
-        query: "ENTP",
+        type: "NC",
+        query: "NC",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich/15.ENTP.jpg?_t=1743604231",
+          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
       },
       {
-        type: "ENFJ",
-        query: "ENFJ",
+        type: "DU",
+        query: "DU",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich/05.ENFJ.jpg?_t=1743604231",
+          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
       },
       {
-        type: "ENFP",
-        query: "ENFP",
+        type: "KI",
+        query: "KI",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich/09.ENFP.jpg?_t=1743604231",
+          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
       },
       {
-        type: "ISTJ",
-        query: "ISTJ",
+        type: "KIA",
+        query: "KIA",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich/04.ISTJ.jpg?_t=1743604231",
+          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
       },
       {
-        type: "ISTP",
-        query: "ISTP",
+        type: "HAN",
+        query: "HAN",
         img_src:
-          "https://mansik.dothome.co.kr/img/rich/08.ISTP.jpg?_t=1743604231",
-      },
-      {
-        type: "ISFJ",
-        query: "ISFJ",
-        img_src:
-          "https://mansik.dothome.co.kr/img/rich/11.ISFJ.jpg?_t=1743604231",
-      },
-      {
-        type: "ISFP",
-        query: "ISFP",
-        img_src:
-          "https://mansik.dothome.co.kr/img/rich/14.ISFP.jpg?_t=1743604231",
-      },
-      {
-        type: "INTJ",
-        query: "INTJ",
-        img_src:
-          "https://mansik.dothome.co.kr/img/rich/02.INTJ.jpg?_t=1743604231",
-      },
-      {
-        type: "INTP",
-        query: "INTP",
-        img_src:
-          "https://mansik.dothome.co.kr/img/rich/16.INTP.jpg?_t=1743604231",
-      },
-      {
-        type: "INFJ",
-        query: "INFJ",
-        img_src:
-          "https://mansik.dothome.co.kr/img/rich/06.INFJ.jpg?_t=1743604231",
-      },
-      {
-        type: "INFP",
-        query: "INFP",
-        img_src:
-          "https://mansik.dothome.co.kr/img/rich/12.INFP.jpg?_t=1743604231",
-      },
+          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
+      }
     ],
-  },
-  // personalColorJP
-  {
-    info: {
-      mainTitle: "パーソナルカラー診断_性格編",
-      subTitle: "自分に似合う色は何だろう？ パーソナルカラーテスト",
-      mainUrl: "personalColorJP",
-      scoreType: "MBTI",
-      mainImage:
-        "https://www.dropbox.com/scl/fi/oyaueh1pzggp5s92532ba/personalColorJP-intro.png?rlkey=pc8j3xs4o64hlxoiqegk6nrdb&st=ipxjb532&dl=1",
-      thumbImage:
-        "https://www.dropbox.com/scl/fi/kt272mdx3kigrtgwojeod/personalColorJP-thumb.png?rlkey=j19yzp6gt6iokqgg8kzrl1gpj&st=gzznyj10&dl=1",
-      lang: "JP",
-      category: "characteristic",
-    },
-    questions: [
-      {
-        which: "EI",
-        question: "처음 보는 친구들에게 나는?",
-        answers: [
-          {
-            type: "E",
-            content: "내가 먼저 말을 건낸다.",
-          },
-          {
-            type: "I",
-            content: "대부분 다른 친구가 먼저 말을 건낸다.",
-          },
-        ],
-      },
-      {
-        which: "EI",
-        question: "주말에 난?",
-        answers: [
-          {
-            type: "E",
-            content: "사람들과 만나는 것을 즐긴다.",
-          },
-          {
-            type: "I",
-            content: "혼자 있는 게 싫지 않은 편이다.",
-          },
-        ],
-      },
-      {
-        which: "EI",
-        question: "친구들과 놀 때 나는?",
-        answers: [
-          {
-            type: "E",
-            content: "왁자지껄한 신나는 분위기를 좋아한다.",
-          },
-          {
-            type: "I",
-            content: "소수의 친구들과 소소하게 대화하는 것을 좋아한다. ",
-          },
-        ],
-      },
-      {
-        which: "SN",
-        question: "내가 더 중요하게 생각하는 것은?",
-        answers: [
-          {
-            type: "S",
-            content: "현재가 없으면 미래도 없다.",
-          },
-          {
-            type: "N",
-            content: "미래를 생각하지 않으면 발전이 없다.",
-          },
-        ],
-      },
-      {
-        which: "SN",
-        question: "일할 때 나는?",
-        answers: [
-          {
-            type: "S",
-            content: "남들이 하는 대로 따라 가는 것이 좋다.",
-          },
-          {
-            type: "N",
-            content: "스스로 나만의 방법을 만드는 게 좋다. ",
-          },
-        ],
-      },
-      {
-        which: "SN",
-        question: "주변 사람들이 나에게 하는 말은?",
-        answers: [
-          {
-            type: "S",
-            content: "꾸준하고 참을성이 있다는 말을 자주한다.",
-          },
-          {
-            type: "N",
-            content: "창의적이고 독창적이라는 말을 자주한다.",
-          },
-        ],
-      },
-      {
-        which: "TF",
-        question: "거절해야 하는 상황이 오면 나는?",
-        answers: [
-          {
-            type: "T",
-            content: "강력하게 할 수 없다고 말한다.",
-          },
-          {
-            type: "F",
-            content: "고민하다가 대부분 들어주는 편이다.",
-          },
-        ],
-      },
-      {
-        which: "TF",
-        question: "화났을 때 나는?",
-        answers: [
-          {
-            type: "T",
-            content: "논리적으로 잘 말하면서 따진다. ",
-          },
-          {
-            type: "F",
-            content: "할말이 많지만 너무 분해서 눈물부터 난다.",
-          },
-        ],
-      },
-      {
-        which: "TF",
-        question:
-          "고민을 얘기하는 친구, 듣다 보니 친구의 잘못인 것 같다. 그럴 때 나는?",
-        answers: [
-          {
-            type: "T",
-            content: "친구의 잘못된 점을 말해준다.",
-          },
-          {
-            type: "F",
-            content: "직접적으로 말하면 친구가 그래 할까봐 돌려 말한다.",
-          },
-        ],
-      },
-      {
-        which: "JP",
-        question: "준비물을 준비할 때 나는?",
-        answers: [
-          {
-            type: "J",
-            content: "하루 전 날 미리 준비한다.",
-          },
-          {
-            type: "P",
-            content: "‘내일 챙겨야지’ 하다가 까먹고 놓고 오는 일이 많다.",
-          },
-        ],
-      },
-      {
-        which: "JP",
-        question:
-          "끝나고 집에 가서 공부하려 했는데, 친구들이 놀자고 붙잡는다. 나는?",
-        answers: [
-          {
-            type: "J",
-            content: "계획에 없던 일인데…매우 당황스럽다.",
-          },
-          {
-            type: "P",
-            content: "오케이! 역시 계획대로 안 되는 것이 인생! 놀자!!!!",
-          },
-        ],
-      },
-      {
-        which: "JP",
-        question: "내가 가고싶은 여행지 스타일은?",
-        answers: [
-          {
-            type: "J",
-            content:
-              "내가 계획한대로! 계획적으로 일의 순서대로 진행하는 것을 좋아해!",
-          },
-          {
-            type: "P",
-            content:
-              "그때그때 생각나는 대로 일 처리! 융통성 있게 하는 것을 좋아해!",
-          },
-        ],
-      },
-    ],
-    results: [
-      {
-        type: "ESTJ",
-        query: "ESTJ",
-        img_src:
-          "https://www.dropbox.com/scl/fi/pw32b9gizven8wqpw5dwf/ESTJ.png?rlkey=qtklzibgln378c3bdknwjw7tf&st=8l16g8ct&dl=1",
-      },
-      {
-        type: "ESTP",
-        query: "ESTP",
-        img_src:
-          "https://www.dropbox.com/scl/fi/ibgrksb70x2bjzcp0z04h/ESTP.png?rlkey=ik3lcdangfzm98erz6br44qb1&st=lhd9w11r&dl=1",
-      },
-      {
-        type: "ESFJ",
-        query: "ESFJ",
-        img_src:
-          "https://mansik.dothome.co.kr/img/rich/10.ESFJ.jpg?_t=1743604231",
-      },
-      {
-        type: "ESFP",
-        query: "ESFP",
-        img_src:
-          "https://www.dropbox.com/scl/fi/fpewgwyldewu32atxl46r/ESFP.png?rlkey=wqk84mirvwsztbndmcxnyf5nq&st=6e0egn3c&dl=1",
-      },
-      {
-        type: "ENTJ",
-        query: "ENTJ",
-        img_src:
-          "https://www.dropbox.com/scl/fi/5z99j9pguw2v481c2684d/ENTJ.png?rlkey=gh85ty07z8wt487w67qxax5px&st=ss1r7dxx&dl=1",
-      },
-      {
-        type: "ENTP",
-        query: "ENTP",
-        img_src:
-          "https://www.dropbox.com/scl/fi/wbt2slrxassf1w1xkmtre/ENTP.png?rlkey=otdc1hazlyxnangfcryydh5k1&st=69k3sp7u&dl=1",
-      },
-      {
-        type: "ENFJ",
-        query: "ENFJ",
-        img_src:
-          "https://www.dropbox.com/scl/fi/45rtpzm7yc0abt0jpw4dg/ENFJ.png?rlkey=03bckb05d1vkz534jkqskdunh&st=sja06fnq&dl=1",
-      },
-      {
-        type: "ENFP",
-        query: "ENFP",
-        img_src:
-          "https://www.dropbox.com/scl/fi/q6mzyi55sr85bpaahvrbf/ENFP.png?rlkey=3721niechpy0xsvvc2i9rzrd3&st=96zbdbsu&dl=1",
-      },
-      {
-        type: "ISTJ",
-        query: "ISTJ",
-        img_src:
-          "https://www.dropbox.com/scl/fi/65z4aoimkhjya6wmu7vo8/ISTJ.png?rlkey=guf8653rlsy12qwqju2prox59&st=fgwc8cnp&dl=1",
-      },
-      {
-        type: "ISTP",
-        query: "ISTP",
-        img_src:
-          "https://www.dropbox.com/scl/fi/be1p8s7v4y3cn5l5jqm1q/ISTP.png?rlkey=3zylu48zhmqmit9ihfy76487u&st=8vdfflut&dl=1",
-      },
-      {
-        type: "ISFJ",
-        query: "ISFJ",
-        img_src:
-          "https://mansik.dothome.co.kr/img/rich/11.ISFJ.jpg?_t=1743604231",
-      },
-      {
-        type: "ISFP",
-        query: "ISFP",
-        img_src:
-          "https://www.dropbox.com/scl/fi/0p3eidtg3jcmfmxp6f59s/ISFP.png?rlkey=wmktoly5dyl6xezae7nwxwu3u&st=sh6o7h2i&dl=1",
-      },
-      {
-        type: "INTJ",
-        query: "INTJ",
-        img_src:
-          "https://www.dropbox.com/scl/fi/ibyezz790rxzciz7mmdmb/INTJ.png?rlkey=aewbj0ydimf4z1xv0olhpc2zh&st=lcotd17i&dl=1",
-      },
-      {
-        type: "INTP",
-        query: "INTP",
-        img_src:
-          "https://www.dropbox.com/scl/fi/gnthsbrbmpe23m07dacyt/INTP.png?rlkey=i45gddj68d5go2mpanknj4yf7&st=aois0s0l&dl=1",
-      },
-      {
-        type: "INFJ",
-        query: "INFJ",
-        img_src:
-          "https://www.dropbox.com/scl/fi/tndrtsb971747ngvvhh8a/INFJ.png?rlkey=y7lvzvphffjam2yr5hpsqhbnz&st=1sk1yal6&dl=1",
-      },
-      {
-        type: "INFP",
-        query: "INFP",
-        img_src:
-          "https://mansik.dothome.co.kr/img/rich/12.INFP.jpg?_t=1743604231",
-      },
-    ],
-  },
+  }
 ];
 
 // mbti.com

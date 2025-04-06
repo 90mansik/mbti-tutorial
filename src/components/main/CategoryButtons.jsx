@@ -27,11 +27,11 @@ function CategoryButtons(){
     }
     return <div>
         {/* mbit.com | mbti.com?lang=Eng  */}
-        <button className={styles.categoryButton} onClick={() => onCategoryButtonClick('all')}>전체</button>
+        <button className={styles.categoryButton} onClick={() => onCategoryButtonClick('all')}> 🧩 전체</button>
         {/* mbit.com | mbti.com/?lang=Eng -> &cat=chracteristic */}
-        <button className={styles.categoryButton} onClick={() => onCategoryButtonClick('characteristic')}>성격</button>
+        <button className={styles.categoryButton} onClick={() => onCategoryButtonClick('characteristic')}> 🧠 성격</button>
         {/* mbit.com | mbti.com/?lang=Eng -> &cat=love */}
-        <button className={styles.categoryButton} onClick={() => onCategoryButtonClick('love')}>연애</button>
+        <button className={styles.categoryButton} onClick={() => onCategoryButtonClick('love')}>💕 연애</button>
 
     </div>;
 }

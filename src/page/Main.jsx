@@ -4,7 +4,7 @@ import CategoryButtons from "../components/main/CategoryButtons";
 import ThumbnailList from "../components/main/ThumbnailList";
 
 function Main(){
-    return <div>
+    return <div style={{ width : 450, margin: "0 auto"}}>
         <LanguageIcons />
         <MainBanner />
         <CategoryButtons />
