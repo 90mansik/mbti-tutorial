@@ -1,5 +1,5 @@
 import Lottie from "react-lottie";
-import * as animationData from "../../assets/loading-animation.json";
+import * as animationData from "../../assets/loading-animation2.json";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
