@@ -18,7 +18,7 @@ function CategoryButtons(){
         // navigate(`/?lang=${languge}&cat=?${category}`);
         if( category == 'all'){
             navigate(`/?lang=${languge}`);
-        }else if( category == 'love' || category == 'characteristic'){
+        }else if( category == 'love' || category == 'characteristic' ||  category == 'etc'){
             navigate(`/?lang=${languge}&cat=${category}`);
         }else{
             alert("잘못된 카테고리입니다.");
@@ -26,12 +26,17 @@ function CategoryButtons(){
         }
     }
     return <div>
-        {/* mbit.com | mbti.com?lang=Eng  */}
-        <button className={styles.categoryButton} onClick={() => onCategoryButtonClick('all')}> 🧩 전체</button>
-        {/* mbit.com | mbti.com/?lang=Eng -> &cat=chracteristic */}
+        {/* mbit.com | mbti.com?lang=Kor  */}
+        <button className={styles.categoryButton} onClick={() => onCategoryButtonClick('all')}> 🧩 ALL</button>
+        {/* mbit.com | mbti.com/?lang=Kor -> &cat=chracteristic */}
         <button className={styles.categoryButton} onClick={() => onCategoryButtonClick('characteristic')}> 🧠 성격</button>
-        {/* mbit.com | mbti.com/?lang=Eng -> &cat=love */}
+        {/* mbit.com | mbti.com/?lang=Kor -> &cat=love */}
         <button className={styles.categoryButton} onClick={() => onCategoryButtonClick('love')}>💕 연애</button>
+        {/* mbit.com | mbti.com/?lang=Eng -> &cat=etc */}
+        <button className={styles.categoryButton} onClick={() => onCategoryButtonClick('etc')}>✨ 기타</button>
+
+
+        
 
     </div>;
 }

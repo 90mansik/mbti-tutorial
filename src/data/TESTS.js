@@ -303,7 +303,7 @@ export const TESTS = [
       thumbImage:
         "https://mansik.dothome.co.kr/img/test/test-main.png?_t=1743921397",
       lang: "Kor",
-      category: "characteristic",
+      category: "etc",
     },
     questions: [
       {
