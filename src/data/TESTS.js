@@ -293,7 +293,7 @@ export const TESTS = [
   {
     info: {
       mainTitle: "야구 구단 테스트",
-      subTitle: "나에게 맞는 야구 구단은 어디?",
+      subTitle: "나랑 찰떡인 K-야구 구단은?",
       mainUrl: "baseballTeamTest",
       scoreType: "oneChoice",
       scoreArray: ["LG", "SSG", "SAM", "KT", "LOT", "NC", "DU", "KI", "KIA", "HAN"], // 점수 타입 배열
@@ -301,7 +301,7 @@ export const TESTS = [
         "https://mansik.dothome.co.kr/img/baseballTest/baseball_main.jpg?_t=1743950459",
         
       thumbImage:
-        "https://mansik.dothome.co.kr/img/baseballTest/baseball_main.jpg?_t=1743950459",
+        "https://mansik.dothome.co.kr/img/baseballTest/baseball_main.jpg?_t=1743950459gi",
       lang: "Kor",
       category: "etc",
     },
@@ -533,61 +533,61 @@ export const TESTS = [
         type: "LG",
         query: "LG",
         img_src:
-          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
+          "https://mansik.dothome.co.kr/img/baseballTest/baseball_result_lg.jpg?_t=1744035036",
       },
       {
         type: "SSG",
         query: "SSG",
         img_src:
-          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
+          "https://mansik.dothome.co.kr/img/baseballTest/baseball_result_ssg.jpg?_t=1744035036",
       },
       {
         type: "SAM",
         query: "SAM",
         img_src:
-          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
+          "https://mansik.dothome.co.kr/img/baseballTest/baseball_result_samsung.jpg?_t=1744035036",
       },
       {
         type: "KT",
         query: "KT",
         img_src:
-          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
+          "https://mansik.dothome.co.kr/img/baseballTest/baseball_result_kt.jpg?_t=1744035036",
       },
       {
         type: "LOT",
         query: "LOT",
         img_src:
-          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
+          "https://mansik.dothome.co.kr/img/baseballTest/baseball_result_lotte.jpg?_t=1744035036",
       },
       {
         type: "NC",
         query: "NC",
         img_src:
-          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
+          "https://mansik.dothome.co.kr/img/baseballTest/baseball_result_nc.jpg?_t=1744035036",
       },
       {
         type: "DU",
         query: "DU",
         img_src:
-          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
+          "https://mansik.dothome.co.kr/img/baseballTest/baseball_result_dusan.jpg?_t=1744035036",
       },
       {
         type: "KI",
         query: "KI",
         img_src:
-          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
+          "https://mansik.dothome.co.kr/img/baseballTest/baseball_result_kiwoom.jpg?_t=1744035036",
       },
       {
         type: "KIA",
         query: "KIA",
         img_src:
-          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
+          "https://mansik.dothome.co.kr/img/baseballTest/baseball_result_kia.jpg?_t=1744035036",
       },
       {
         type: "HAN",
         query: "HAN",
         img_src:
-          "https://mansik.dothome.co.kr/img/test/test-result.png?_t=1743943398",
+          "https://mansik.dothome.co.kr/img/baseballTest/baseball_result_hanwha.jpg?_t=1744035036",
       }
     ],
   }

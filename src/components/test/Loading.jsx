@@ -25,6 +25,7 @@ function Loading({mbtiScore, currentTest}) {
       ];
 
       let resultType = "";
+
       for (let pair of mbtiPairs) {
         const firstType = pair[0]; // E, N, T, J
         const secondType = pair[1]; // I, S, F, P
@@ -37,6 +38,7 @@ function Loading({mbtiScore, currentTest}) {
       return resultType;
     } else if (scoreType === "oneChoice") {
       console.log("oneChoice init");
+      console.log("mbtiScore",mbtiScore);
       // oneChoice 결과 계산 로직
       return scoreArray.reduce((highest, type) =>
         mbtiScore[type] > mbtiScore[highest] ? type : highest

@@ -8,15 +8,19 @@ function Quiz({
 }) {
     const [questionNum, setQuestionNum] = useState(0);
     const onOptionClick = (type) =>{
+         console.log("Quzi.type", type);
         mbtiScore[type] += 1;
+        console.log("Quzi mbtiScore", mbtiScore);
         setMbtiScore({ ...mbtiScore});
         setQuestionNum((prev) => prev +1);
     };
     useEffect(()=>{
         if(questionNum == questions.length){
+            console.log("go loading Page")
             setMode("loading");
         }
-        console.log("questionNum", questionNum);
+         console.log("questionNum", questionNum);
+         console.log("questions.length", questions.length);
     }, [questionNum, questions.length, setMode]);
     return <div>
         <h3 className={styles.questionText}>
