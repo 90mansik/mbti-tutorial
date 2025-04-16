@@ -5,6 +5,7 @@ import ShareButtonGruop from "../components/testResult/ShareButtonGruop";
 import TestResultRender from "../components/testResult/TestResultRender";
 import { useEffect, useState } from "react";
 import { TESTS } from "../data/TESTS";
+import KakaoAdfit from "../components/ad/KakaoAdfit";
 
 
 // console.log("ShareButtonGruop:", ShareButtonGruop);
@@ -40,6 +41,7 @@ function TestResult(){
     return <div>
         <TestResultRender renderResultInfo={renderResultInfo} />
         {/* <ShareButtonGruop testParam={testParam} resultParam={resultParam} renderTestInfo={renderTestInfo} /> */}
+        <KakaoAdfit />
         <ResultButtonGruop testParam={testParam} resultParam={resultParam}  />
         <ResultThumbnailList testParam={testParam} />
     </div>;
