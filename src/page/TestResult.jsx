@@ -6,6 +6,7 @@ import TestResultRender from "../components/testResult/TestResultRender";
 import { useEffect, useState } from "react";
 import { TESTS } from "../data/TESTS";
 import KakaoAdfit from "../components/ad/KakaoAdfit";
+import CoupangDynamicBanner from "../components/ad/CoupangDynamicBanner";
 
 
 // console.log("ShareButtonGruop:", ShareButtonGruop);
@@ -42,6 +43,7 @@ function TestResult(){
         <TestResultRender renderResultInfo={renderResultInfo} />
         {/* <ShareButtonGruop testParam={testParam} resultParam={resultParam} renderTestInfo={renderTestInfo} /> */}
         <KakaoAdfit />
+        <CoupangDynamicBanner unit={"testResultBanner"} />
         <ResultButtonGruop testParam={testParam} resultParam={resultParam}  />
         <ResultThumbnailList testParam={testParam} />
     </div>;

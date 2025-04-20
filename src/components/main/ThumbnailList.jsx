@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react';
 import {TESTS} from '../../data/TESTS';
 import {Link, useSearchParams } from 'react-router-dom';
 import {base_url} from '../../App';
+import CoupongDynamicBanner from '../ad/CoupangDynamicBanner';
 
 function ThumbnailList(){
     const [searchParams, setSearchParams] = useSearchParams();
@@ -35,15 +36,19 @@ function ThumbnailList(){
     <div>
     {/* 이 이미지를 누르면 해당 테스트 Intro 페이지로 넘어가기  */}
     {/* base_url/:testName */}
-        {testList?.map((test) => (
-        <Link to={`/${test?.info?.mainUrl}`} key={test?.info?.mainUrl}>
-            <img  style={{ width : "100%"}}
-                src={test?.info?.thumbImage} 
-                alt={test?.info?.mainUrl} 
-            />
-        </Link>
+        {testList?.map((test, index) => (
+        <div>
+            <Link to={`/${test?.info?.mainUrl}`} key={test?.info?.mainUrl}>
+                <img  style={{ width : "100%"}}
+                    src={test?.info?.thumbImage} 
+                    alt={test?.info?.mainUrl} 
+                />
+            </Link>
+            {index % 2 == 0 && <CoupongDynamicBanner unit={"mainBanner"} />}
+        </div>
         ))}
 
+        
     </div>
     );
 }

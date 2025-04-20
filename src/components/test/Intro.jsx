@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { eventSenderGA } from "../../tools/tools";
 import IntroButtonGroup from "./IntroButtonGroup";
 import KakaoAdfit from "../ad/KakaoAdfit";
+import CoupangDynamicBanner from "../ad/CoupangDynamicBanner";
 
 function Intro({info, setMode}) {
         const onImageClick = () =>{
@@ -26,6 +27,7 @@ function Intro({info, setMode}) {
             />
         </div>
         <KakaoAdfit />
+        <CoupangDynamicBanner unit={"introBanner"} />
         <p >
             <span style={{ fontWeight :"bold", color: "brown"}}>{info?.mainTitle}</span>로 여러분의 성향을 테스트 해보세요!</p>
         <IntroButtonGroup  testParam={info?.mainUrl} />
